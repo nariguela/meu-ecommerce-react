@@ -40,11 +40,13 @@ main {
   margin: 0;
 }
 
-.main-content {
+.page-content {
   background-color: #fff;
-  height: calc(100vh - 64px);
-  position: relative;
-  margin-top: 80px;
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
 }
 
 .products-grid {
@@ -98,4 +100,67 @@ main {
 }
 .btn-add-to-cart:hover {
   background-color: #2f3e66;
+}
+
+.checkout-content {
+  background-color: #fff;
+  min-height: 100vh;
+  padding-top: 90px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkout-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.checkout-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.checkout-details {
+  flex-grow: 1;
+}
+
+.checkout-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.btn-return,
+.btn-purchase {
+  padding: 1rem 2rem;
+  background-color: #2f3e66;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-return:hover,
+.btn-purchase:hover {
+  background-color: #1f2b4d;
 }

@@ -24,14 +24,14 @@ export default function Home({
 
   if (loading) {
     return (
-      <div className="main-content">
+      <div className="page-content">
         <p>Loading...</p>
       </div>
     );
   }
 
   return (
-    <div className="main-content">
+    <div className="page-content">
       <div className="products-grid">
         {products.map((product) => (
           <div className="product-card" key={product.id}>

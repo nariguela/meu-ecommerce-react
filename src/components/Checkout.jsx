@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Checkout({ cart }) {
   const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   return (
-    <div className="main-content">
+    <div className="checkout-content">
       <h2>Checkout</h2>
       {cart.length === 0 ? (
         <p>Seu carrinho está vazio.</p>
@@ -23,6 +24,12 @@ export default function Checkout({ cart }) {
           ))}
           <hr />
           <h3>Total da compra: R$ {total.toFixed(2)}</h3>
+          <div className="checkout-buttons">
+            <Link to="/" className="btn-return">
+              Voltar à Loja
+            </Link>
+            <button className="btn-purchase">Finalizar Compra</button>
+          </div>
         </div>
       )}
     </div>
