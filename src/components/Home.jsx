@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-export default function Home({ handleAddToCart }) {
+export default function Home({
+  handleAddToCart,
+  quantities,
+  handleQuantityChange,
+}) {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -9,7 +13,6 @@ export default function Home({ handleAddToCart }) {
     fetch("http://localhost:3001/products")
       .then((res) => res.json())
       .then((data) => {
-        console.log("Produtos:", data);
         setProducts(data);
         setLoading(false);
       })
@@ -36,22 +39,27 @@ export default function Home({ handleAddToCart }) {
             <h4>{product.name}</h4>
             <div>
               <p>R$ {product.price.toFixed(2)}</p>
-              <select>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
+              <select
+                value={quantities[product.id] || 1}
+                onChange={(e) =>
+                  handleQuantityChange(product.id, e.target.value)
+                }
+              >
+                {[...Array(10)].map((_, i) => (
+                  <option key={i + 1} value={i + 1}>
+                    {i + 1}
+                  </option>
+                ))}
               </select>
             </div>
             <button
               className="btn-add-to-cart"
-              onClick={() => handleAddToCart(product)}
+              onClick={() =>
+                handleAddToCart({
+                  ...product,
+                  quantity: quantities[product.id] || 1,
+                })
+              }
             >
               Adicionar ao carrinho
             </button>

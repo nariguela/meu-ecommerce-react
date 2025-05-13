@@ -8,6 +8,7 @@ import "./App.css";
 function App() {
   const [cart, setCart] = useState([]);
   const [cartCount, setCartCount] = useState(0);
+  const [quantities, setQuantities] = useState({});
 
   const handleAddToCart = (product) => {
     const existingProduct = cart.find((item) => item.id === product.id);
@@ -15,20 +16,29 @@ function App() {
       setCart(
         cart.map((item) =>
           item.id === product.id
-            ? { ...item, quantity: item.quantity + 1 }
+            ? { ...item, quantity: item.quantity + product.quantity }
             : item
         )
       );
     } else {
-      setCart([...cart, { ...product, quantity: 1 }]);
+      setCart([...cart, { ...product, quantity: product.quantity }]);
     }
-    setCartCount(cartCount + 1);
+    setCartCount(cartCount + product.quantity);
+  };
+
+  const handleQuantityChange = (productId, value) => {
+    setQuantities({ ...quantities, [productId]: Number(value) });
   };
 
   return (
     <>
       <Navbar cartCount={cartCount}></Navbar>
-      <Home handleAddToCart={handleAddToCart}></Home>
+      <Home
+        handleAddToCart={handleAddToCart}
+        quantities={quantities}
+        setQuantities={setQuantities}
+        handleQuantityChange={handleQuantityChange}
+      ></Home>
     </>
   );
 }
