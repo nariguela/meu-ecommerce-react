@@ -32,6 +32,19 @@ function App() {
     setQuantities({ ...quantities, [productId]: Number(value) });
   };
 
+  const handleRemoveFromCart = (productId) => {
+    const updatedCart = cart.filter((item) => item.id !== productId);
+    setCart(updatedCart);
+    setCartCount(cartCount - 1);
+  };
+
+  const handleUpdateQuantity = (productId, value) => {
+    const updatedCart = cart.map((item) =>
+      item.id === productId ? { ...item, quantity: Number(value) } : item
+    );
+    setCart(updatedCart);
+  };
+
   return (
     <>
       <Navbar cartCount={cartCount}></Navbar>
@@ -46,7 +59,16 @@ function App() {
             />
           }
         />
-        <Route path="/checkout" element={<Checkout cart={cart} />} />
+        <Route
+          path="/checkout"
+          element={
+            <Checkout
+              cart={cart}
+              handleRemoveFromCart={handleRemoveFromCart}
+              handleUpdateQuantity={handleUpdateQuantity}
+            />
+          }
+        />
       </Routes>
     </>
   );
