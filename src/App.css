@@ -1,0 +1,33 @@
+main {
+  font-family: Montserrat, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #1f2b4d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 1rem;
+}
+
+.navbar-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-icon {
+  margin-right: 1rem;
+}
+
+.cart-count {
+  background-color: #2f3e66;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  margin: 0;
+}
