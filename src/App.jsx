@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import Main from "./components/Main";
+import Home from "./components/Home";
 
 import "./App.css";
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <Main></Main>
+      <Home></Home>
     </>
   );
 }

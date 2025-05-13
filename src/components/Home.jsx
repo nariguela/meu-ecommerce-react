@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export default function Main() {
+export default function Home() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
 
