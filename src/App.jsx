@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import Checkout from "./components/Checkout";
 
 import "./App.css";
 
@@ -33,12 +35,19 @@ function App() {
   return (
     <>
       <Navbar cartCount={cartCount}></Navbar>
-      <Home
-        handleAddToCart={handleAddToCart}
-        quantities={quantities}
-        setQuantities={setQuantities}
-        handleQuantityChange={handleQuantityChange}
-      ></Home>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Home
+              handleAddToCart={handleAddToCart}
+              quantities={quantities}
+              handleQuantityChange={handleQuantityChange}
+            />
+          }
+        />
+        <Route path="/checkout" element={<Checkout cart={cart} />} />
+      </Routes>
     </>
   );
 }

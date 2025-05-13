@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { FaShoppingCart } from "react-icons/fa";
 
@@ -6,13 +7,15 @@ export default function Navbar({ cartCount }) {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <h1>Loja</h1>
+        <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+          <h1>Loja</h1>
+        </Link>
       </div>
       <div className="navbar-cart">
-        <div className="cart-icon">
+        <Link to="/checkout" className="cart-icon" style={{ color: "white" }}>
           <FaShoppingCart size={24} />
-        </div>
-        <p className="cart-count">{cartCount}</p>
+          <span className="cart-count">{cartCount}</span>
+        </Link>
       </div>
     </nav>
   );
