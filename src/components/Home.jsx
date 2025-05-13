@@ -31,10 +31,25 @@ export default function Home() {
     <div className="main-content">
       <div className="products-grid">
         {products.map((product) => (
-          <div key={product.id}>
+          <div className="product-card" key={product.id}>
             <img src={product.image} alt={product.name} />
-            <h3>{product.name}</h3>
-            <p>R$ {product.price.toFixed(2)}</p>
+            <h4>{product.name}</h4>
+            <div>
+              <p>R$ {product.price.toFixed(2)}</p>
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <button className="btn-add-to-cart">Adicionar ao carrinho</button>
           </div>
         ))}
       </div>

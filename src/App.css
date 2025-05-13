@@ -49,3 +49,49 @@ main {
   gap: 1rem;
   padding: 1rem;
 }
+
+.product-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+}
+
+.product-card h4 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.product-card p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.product-card div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.product-card select {
+  padding: 0.2rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.btn-add-to-cart {
+  background-color: #1f2b4d;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-add-to-cart:hover {
+  background-color: #2f3e66;
+}
