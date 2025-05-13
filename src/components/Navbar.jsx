@@ -12,8 +12,8 @@ export default function Navbar({ cartCount }) {
         </Link>
       </div>
       <div className="navbar-cart">
-        <Link to="/checkout" className="cart-icon" style={{ color: "white" }}>
-          <FaShoppingCart size={24} />
+        <Link to="/checkout" style={{ color: "white" }}>
+          <FaShoppingCart size={24} className="cart-icon" />
           <span className="cart-count">{cartCount}</span>
         </Link>
       </div>

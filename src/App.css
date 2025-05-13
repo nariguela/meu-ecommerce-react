@@ -23,6 +23,10 @@ main {
   justify-content: space-between;
 }
 
+.navbar-cart a {
+  text-decoration: none;
+}
+
 .cart-icon {
   margin-right: 1rem;
 }
