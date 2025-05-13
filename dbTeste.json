@@ -1,25 +1,25 @@
 {
-  "produtos": [
+  "products": [
     {
       "id": 1,
-      "nome": "Camisa Básica",
-      "preco": 59.9,
-      "descricao": "Camisa confortável de algodão",
-      "imagem": "https://via.placeholder.com/150"
+      "name": "Camisa Básica",
+      "price": 59.9,
+      "description": "Camisa confortável de algodão",
+      "image": "https://picsum.photos/200/200"
     },
     {
       "id": 2,
-      "nome": "Calça Jeans",
-      "preco": 99.9,
-      "descricao": "Calça jeans azul escura",
-      "imagem": "https://via.placeholder.com/150"
+      "name": "Calça Jeans",
+      "price": 99.9,
+      "description": "Calça jeans azul escura",
+      "image": "https://picsum.photos/200/200"
     },
     {
       "id": 3,
-      "nome": "Tênis Esportivo",
-      "preco": 149.9,
-      "descricao": "Tênis ideal para caminhadas e academia",
-      "imagem": "https://via.placeholder.com/150"
+      "name": "Tênis Esportivo",
+      "price": 149.9,
+      "description": "Tênis ideal para caminhadas e academia",
+      "image": "https://picsum.photos/200/200"
     }
   ]
 }

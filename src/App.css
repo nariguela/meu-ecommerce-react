@@ -31,3 +31,15 @@ main {
   font-size: 0.8rem;
   margin: 0;
 }
+
+.main-content {
+  background-color: #fff;
+  height: calc(100vh - 64px);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}

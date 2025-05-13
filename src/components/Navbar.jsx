@@ -8,7 +8,7 @@ export default function Navbar() {
       </div>
       <div className="navbar-cart">
         <div className="cart-icon">
-          <img src="https://via.placeholder.com/20" alt="Cart Icon" />
+          <p>cart</p>
         </div>
         <p className="cart-count">0</p>
       </div>
