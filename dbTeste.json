@@ -5,21 +5,140 @@
       "name": "Camisa Básica",
       "price": 59.9,
       "description": "Camisa confortável de algodão",
-      "image": "https://picsum.photos/200/200"
+      "image": "https://picsum.photos/200/200?random=1"
     },
     {
       "id": 2,
       "name": "Calça Jeans",
       "price": 99.9,
       "description": "Calça jeans azul escura",
-      "image": "https://picsum.photos/200/200"
+      "image": "https://picsum.photos/200/200?random=2"
     },
     {
       "id": 3,
       "name": "Tênis Esportivo",
       "price": 149.9,
       "description": "Tênis ideal para caminhadas e academia",
-      "image": "https://picsum.photos/200/200"
+      "image": "https://picsum.photos/200/200?random=3"
+    },
+    {
+      "id": 4,
+      "name": "Jaqueta Corta-Vento",
+      "price": 199.9,
+      "description": "Jaqueta leve para dias frios e ventosos",
+      "image": "https://picsum.photos/200/200?random=4"
+    },
+    {
+      "id": 5,
+      "name": "Meia Esportiva",
+      "price": 19.9,
+      "description": "Meias confortáveis para atividades físicas",
+      "image": "https://picsum.photos/200/200?random=5"
+    },
+    {
+      "id": 6,
+      "name": "Boné Casual",
+      "price": 39.9,
+      "description": "Boné estiloso para o dia a dia",
+      "image": "https://picsum.photos/200/200?random=6"
+    },
+    {
+      "id": 7,
+      "name": "Camiseta Estampada",
+      "price": 69.9,
+      "description": "Camiseta com estampa moderna",
+      "image": "https://picsum.photos/200/200?random=7"
+    },
+    {
+      "id": 8,
+      "name": "Shorts Esportivo",
+      "price": 49.9,
+      "description": "Shorts leve para treinos",
+      "image": "https://picsum.photos/200/200?random=8"
+    },
+    {
+      "id": 9,
+      "name": "Moletom",
+      "price": 129.9,
+      "description": "Moletom quentinho com capuz",
+      "image": "https://picsum.photos/200/200?random=9"
+    },
+    {
+      "id": 10,
+      "name": "Relógio Digital",
+      "price": 299.9,
+      "description": "Relógio resistente à água",
+      "image": "https://picsum.photos/200/200?random=10"
+    },
+    {
+      "id": 11,
+      "name": "Óculos de Sol",
+      "price": 89.9,
+      "description": "Óculos com proteção UV",
+      "image": "https://picsum.photos/200/200?random=11"
+    },
+    {
+      "id": 12,
+      "name": "Chinelo Slide",
+      "price": 39.9,
+      "description": "Chinelo leve e confortável",
+      "image": "https://picsum.photos/200/200?random=12"
+    },
+    {
+      "id": 13,
+      "name": "Cinto de Couro",
+      "price": 69.9,
+      "description": "Cinto elegante e resistente",
+      "image": "https://picsum.photos/200/200?random=13"
+    },
+    {
+      "id": 14,
+      "name": "Camisa Social",
+      "price": 89.9,
+      "description": "Camisa ideal para trabalho e eventos",
+      "image": "https://picsum.photos/200/200?random=14"
+    },
+    {
+      "id": 15,
+      "name": "Tênis Casual",
+      "price": 139.9,
+      "description": "Tênis leve para o dia a dia",
+      "image": "https://picsum.photos/200/200?random=15"
+    },
+    {
+      "id": 16,
+      "name": "Bermuda Cargo",
+      "price": 79.9,
+      "description": "Bermuda prática com vários bolsos",
+      "image": "https://picsum.photos/200/200?random=16"
+    },
+    {
+      "id": 17,
+      "name": "Regata Dry Fit",
+      "price": 34.9,
+      "description": "Regata leve para treinos intensos",
+      "image": "https://picsum.photos/200/200?random=17"
+    },
+    {
+      "id": 18,
+      "name": "Casaco de Moletom",
+      "price": 139.9,
+      "description": "Casaco macio com zíper",
+      "image": "https://picsum.photos/200/200?random=18"
+    },
+    {
+      "id": 19,
+      "name": "Blusa de Frio",
+      "price": 119.9,
+      "description": "Blusa de frio ideal para o inverno",
+      "image": "https://picsum.photos/200/200?random=19"
+    },
+    {
+      "id": 20,
+      "name": "Tênis de Corrida",
+      "price": 159.9,
+      "description": "Tênis com amortecimento para corrida",
+      "image": "https://picsum.photos/200/200?random=20"
     }
   ]
 }
