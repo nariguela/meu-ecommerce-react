@@ -42,7 +42,7 @@ Este é um projeto de um e-commerce simples desenvolvido com **React**. Ele simu
 3. Inicie o JSON Server:
 
    ```bash
-   npx json-server --watch db.json --port 3001
+   npx json-server --watch dbTeste.json --port 3001
 
    ```
 
