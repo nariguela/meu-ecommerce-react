@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
@@ -8,9 +8,21 @@ import Checkout from "./components/Checkout";
 import "./App.css";
 
 function App() {
-  const [cart, setCart] = useState([]);
-  const [cartCount, setCartCount] = useState(0);
+  const [cart, setCart] = useState(() => {
+    const storedCart = localStorage.getItem("cart");
+    return storedCart ? JSON.parse(storedCart) : [];
+  });
+
+  const [cartCount, setCartCount] = useState(() => {
+    const storedCount = localStorage.getItem("cartCount");
+    return storedCount ? JSON.parse(storedCount) : 0;
+  });
   const [quantities, setQuantities] = useState({});
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("cartCount", JSON.stringify(cartCount));
+  }, [cart, cartCount]);
 
   const handleAddToCart = (product) => {
     const existingProduct = cart.find((item) => item.id === product.id);
@@ -33,9 +45,14 @@ function App() {
   };
 
   const handleRemoveFromCart = (productId) => {
+    const itemToRemove = cart.find((item) => item.id === productId);
+
+    if (!itemToRemove) return;
+
     const updatedCart = cart.filter((item) => item.id !== productId);
     setCart(updatedCart);
-    setCartCount(cartCount - 1);
+
+    setCartCount(cartCount - itemToRemove.quantity);
   };
 
   const handleUpdateQuantity = (productId, value) => {
@@ -43,6 +60,7 @@ function App() {
       item.id === productId ? { ...item, quantity: Number(value) } : item
     );
     setCart(updatedCart);
+    setCartCount(updatedCart.reduce((acc, item) => acc + item.quantity, 0));
   };
 
   return (
