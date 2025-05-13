@@ -18,6 +18,7 @@ function App() {
     return storedCount ? JSON.parse(storedCount) : 0;
   });
   const [quantities, setQuantities] = useState({});
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -38,6 +39,11 @@ function App() {
       setCart([...cart, { ...product, quantity: product.quantity }]);
     }
     setCartCount(cartCount + product.quantity);
+
+    setMessage(`${product.name} adicionado ao carrinho com sucesso!`);
+    setTimeout(() => {
+      setMessage("");
+    }, 2000);
   };
 
   const handleQuantityChange = (productId, value) => {
@@ -65,7 +71,7 @@ function App() {
 
   return (
     <>
-      <Navbar cartCount={cartCount}></Navbar>
+      <Navbar cartCount={cartCount} message={message}></Navbar>
       <Routes>
         <Route
           path="/"
