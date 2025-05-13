@@ -11,6 +11,10 @@ main {
   align-items: center;
   color: #fff;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar-cart {
@@ -35,6 +39,8 @@ main {
 .main-content {
   background-color: #fff;
   height: calc(100vh - 64px);
+  position: relative;
+  margin-top: 80px;
 }
 
 .products-grid {

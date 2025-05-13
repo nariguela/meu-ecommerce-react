@@ -130,15 +130,85 @@
       "id": 19,
       "name": "Blusa de Frio",
       "price": 119.9,
-      "description": "Blusa de frio ideal para o inverno",
+      "description": "Blusa ideal para o inverno",
       "image": "https://picsum.photos/200/200?random=19"
     },
     {
       "id": 20,
       "name": "Tênis de Corrida",
       "price": 159.9,
-      "description": "Tênis com amortecimento para corrida",
+      "description": "Tênis com amortecimento",
       "image": "https://picsum.photos/200/200?random=20"
+    },
+    {
+      "id": 21,
+      "name": "Camiseta Longline",
+      "price": 64.9,
+      "description": "Camiseta mais longa, estilosa",
+      "image": "https://picsum.photos/200/200?random=21"
+    },
+    {
+      "id": 22,
+      "name": "Tênis Branco",
+      "price": 119.9,
+      "description": "Tênis branco casual",
+      "image": "https://picsum.photos/200/200?random=22"
+    },
+    {
+      "id": 23,
+      "name": "Calça Jogger",
+      "price": 109.9,
+      "description": "Calça confortável e moderna",
+      "image": "https://picsum.photos/200/200?random=23"
+    },
+    {
+      "id": 24,
+      "name": "Camiseta Oversized",
+      "price": 74.9,
+      "description": "Camiseta de modelagem ampla",
+      "image": "https://picsum.photos/200/200?random=24"
+    },
+    {
+      "id": 25,
+      "name": "Bermuda Jeans",
+      "price": 89.9,
+      "description": "Bermuda jeans moderna",
+      "image": "https://picsum.photos/200/200?random=25"
+    },
+    {
+      "id": 26,
+      "name": "Camiseta Manga Longa",
+      "price": 84.9,
+      "description": "Ideal para meia estação",
+      "image": "https://picsum.photos/200/200?random=26"
+    },
+    {
+      "id": 27,
+      "name": "Touca de Lã",
+      "price": 29.9,
+      "description": "Touca para dias frios",
+      "image": "https://picsum.photos/200/200?random=27"
+    },
+    {
+      "id": 28,
+      "name": "Tênis Chunky",
+      "price": 179.9,
+      "description": "Tênis robusto e na moda",
+      "image": "https://picsum.photos/200/200?random=28"
+    },
+    {
+      "id": 29,
+      "name": "Camisa Listrada",
+      "price": 94.9,
+      "description": "Camisa casual com listras finas",
+      "image": "https://picsum.photos/200/200?random=29"
+    },
+    {
+      "id": 30,
+      "name": "Pochete Esportiva",
+      "price": 44.9,
+      "description": "Acessório para treinos ou passeios",
+      "image": "https://picsum.photos/200/200?random=30"
     }
   ]
 }
