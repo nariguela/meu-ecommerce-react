@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export default function Home() {
+export default function Home({ handleAddToCart }) {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -49,7 +49,12 @@ export default function Home() {
                 <option value="10">10</option>
               </select>
             </div>
-            <button className="btn-add-to-cart">Adicionar ao carrinho</button>
+            <button
+              className="btn-add-to-cart"
+              onClick={() => handleAddToCart(product)}
+            >
+              Adicionar ao carrinho
+            </button>
           </div>
         ))}
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 import { FaShoppingCart } from "react-icons/fa";
 
-export default function Navbar() {
+export default function Navbar({ cartCount }) {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -12,7 +12,7 @@ export default function Navbar() {
         <div className="cart-icon">
           <FaShoppingCart size={24} />
         </div>
-        <p className="cart-count">0</p>
+        <p className="cart-count">{cartCount}</p>
       </div>
     </nav>
   );
