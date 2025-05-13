@@ -1,1 +1,25 @@
-
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Camisa Básica",
+      "preco": 59.9,
+      "descricao": "Camisa confortável de algodão",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 2,
+      "nome": "Calça Jeans",
+      "preco": 99.9,
+      "descricao": "Calça jeans azul escura",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 3,
+      "nome": "Tênis Esportivo",
+      "preco": 149.9,
+      "descricao": "Tênis ideal para caminhadas e academia",
+      "imagem": "https://via.placeholder.com/150"
+    }
+  ]
+}
