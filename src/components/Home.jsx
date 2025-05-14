@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-export default function Home({
-  handleAddToCart,
-  quantities,
-  handleQuantityChange,
-}) {
+export default function Home({ handleAddToCart }) {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [quantities, setQuantities] = useState({});
+
+  const handleQuantityChange = (productId, value) => {
+    setQuantities({ ...quantities, [productId]: Number(value) });
+  };
 
   useEffect(() => {
     setLoading(true);

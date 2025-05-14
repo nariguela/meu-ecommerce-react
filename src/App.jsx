@@ -17,7 +17,6 @@ function App() {
     const storedCount = localStorage.getItem("cartCount");
     return storedCount ? JSON.parse(storedCount) : 0;
   });
-  const [quantities, setQuantities] = useState({});
   const [message, setMessage] = useState("");
 
   useEffect(() => {
@@ -46,10 +45,6 @@ function App() {
     }, 2000);
   };
 
-  const handleQuantityChange = (productId, value) => {
-    setQuantities({ ...quantities, [productId]: Number(value) });
-  };
-
   const handleRemoveFromCart = (productId) => {
     const itemToRemove = cart.find((item) => item.id === productId);
 
@@ -73,16 +68,7 @@ function App() {
     <>
       <Navbar cartCount={cartCount} message={message}></Navbar>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <Home
-              handleAddToCart={handleAddToCart}
-              quantities={quantities}
-              handleQuantityChange={handleQuantityChange}
-            />
-          }
-        />
+        <Route path="/" element={<Home handleAddToCart={handleAddToCart} />} />
         <Route
           path="/checkout"
           element={
