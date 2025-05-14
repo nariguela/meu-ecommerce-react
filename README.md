@@ -49,6 +49,6 @@ Este é um projeto de um e-commerce simples desenvolvido com **React**. Ele simu
 4. Inicie a aplicação React:
 
    ```bash
-   npm start
+   npm run dev
 
    ```
